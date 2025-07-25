@@ -1,5 +1,11 @@
 from datetime import datetime
-import pyfiglet
+
+try:
+    import pyfiglet
+except ImportError as e:  # pragma: no cover - simple import guard
+    raise SystemExit(
+        "pyfiglet is required to run this program.\n" "Install it with 'pip install pyfiglet'."
+    ) from e
 
 
 def display_time():

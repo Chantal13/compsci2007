@@ -2,7 +2,9 @@
 
 This repository contains a small Python script that prints the current time
 using an Edison bulb style font. The program relies on the `pyfiglet` library
-and uses the `bulbhead` font to mimic a vintage bulb display.
+and uses the `bulbhead` font to mimic a vintage bulb display. If `pyfiglet`
+is not installed, the script exits with a helpful message explaining how to
+install it.
 
 ## Requirements
 
